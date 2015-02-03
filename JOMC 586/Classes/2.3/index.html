@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Teams</title>
+    
+    <script>
+        teams = new Array();
+        teams = ["Braves", "Yankees", "Nationals", "Cards"];
+        wins = [62, 58, 66, 27];
+        losses = [58, 89, 56, 89];
+        
+        console.log(teams);
+        console.log(wins);
+        /*console.log(losses);
+        console.log(teams[0]);*/
+        console.log(teams.length);
+        
+        var i = 0;
+        var mostWins = 0;
+        var leadTeam = teams[i];
+        
+        for (i=0; i < teams.length; i++) {
+            if (wins[i] > mostWins) {
+                mostWins = wins[i];
+                leadTeam = teams[i];
+                i++;
+            }
+            
+            else (i++);
+            console.log(leadTeam);
+        }
+
+        
+    </script>
+</head>
+
+<body>
+    
+
+
+</body>
+</html>
