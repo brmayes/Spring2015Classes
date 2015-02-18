@@ -1,0 +1,25 @@
+/* specific styles for bootstrap demo */
+
+.arrow, .main {
+    border: solid 1px;
+    height: 550px;
+}
+
+
+img {
+    margin-top: 250px;
+    width: 50px;
+}
+
+.video {
+    height: 540px;
+    width: 960px;
+    border: solid 1px;
+    background-color: grey;
+}
+
+.main {
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+}
