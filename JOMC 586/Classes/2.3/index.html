@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Teams</title>
+    
+    <script>
+        teams = new Array();
+        teams = ["Braves", "Yankees", "Red Socks", "Nationals", "Cards"];
+        wins = [62, 58, 97, 66, 27];
+        losses = [58, 89, 3, 56, 89];
+        
+        console.log(teams);
+        console.log(wins);
+        /*console.log(losses);
+        console.log(teams[0]);*/
+        console.log(teams.length);
+        
+        var i = 0;
+        var mostWins = 0;
+        var leadTeam = teams[i];
+        var mostLosses = 0;
+        var worstTeam = teams[i];
+        
+        for (i=0; i < teams.length; i++) {
+            if (wins[i] > mostWins) {
+                mostWins = wins[i];
+                leadTeam = teams[i];
+                i++;
+            }
+            
+            else (i++);
+            
+        }
+        console.log("The best team this season is the " + (leadTeam));
+        document.write("The best team this season is the " + (leadTeam));
+        
+        for (i=0; i < teams.length; i++) {
+            if (losses[i] > mostLosses) {
+                mostLosses = losses[i];
+                worstTeam = teams[i];
+                i++;
+            }
+            
+            else (i++);
+        }
+        console.log("The worst team this season is the " + (worstTeam));
+        document.write("The worst team this season is the " + (worstTeam));
+
+        
+    </script>
+</head>
+
+<body>
+    
+
+
+</body>
+</html>
