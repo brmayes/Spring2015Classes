@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Under Five Mortality</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  
+  <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script>
+          $(document).ready(function(){
+            $('.showSingle').click(function(){
+                  $('.targetImg').hide();
+                  $('#div'+$(this).attr('target')).show();
+            });
+            
+            $('.showSingle').click(function(){
+                $(".targetImg_mobile").hide();
+                $("#mobile_div"+$(this).attr("target")).show();
+            });
+          });
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <h1>The causes of under five deaths in malawi</h1>
+    <p>Below are 100 children, representing all deaths related to under five mortality in Malawi.</p>
+      <button target="1" class="showSingle">All</button>
+      <button target="2" class="showSingle">HIV-AIDS</button>
+      <button target="3" class="showSingle">Malaria</button>
+      <button target="4" class="showSingle">Pneumonia</button>
+      <button target="5" class="showSingle">Diarrheal Diseases</button>
+      <button target="6" class="showSingle">Injuries</button>
+      <button target="7" class="showSingle">Non communicable diseases</button>
+      <button target="8" class="showSingle">Measles</button>
+      <button target="9" class="showSingle">Meningitis/encephalitis</button>
+      <button target="10" class="showSingle">Other Conditions</button>
+    
+    <div class="lg-images hidden-xs visible-xl">
+      <img id="div1" class="targetImg" src="images/lg-all.png">
+      <img id="div2" class="targetImg" src="images/lg-hiv.png" style="display: none">
+      <img id="div3"  class="targetImg" src="images/lg-malaria.png" style="display: none">
+      <img id="div4" class="targetImg" src="images/lg-pneumonia.png" style="display: none">
+      <img id="div5"  class="targetImg"src="images/lg-diarreal.png" style="display: none">
+      <img id="div6" class="targetImg" src="images/lg-injuries.png" style="display: none">
+      <img id="div7" class="targetImg" src="images/lg-noncommunicable.png" style="display: none">
+      <img id="div8" class="targetImg" src="images/lg-measles.png" style="display: none">
+      <img id="div9" class="targetImg" src="images/lg-meningitis.png" style="display: none">
+      <img id="div10" class="targetImg" src="images/lg-other.png" style="display: none">
+    </div>
+    
+    <div class="sm-images visible-xs hidden-xl">
+      <img id="mobile_div1" class="targetImg" src="images/sm-all.png">
+      <img id="mobile_div2" class="targetImg" src="images/sm-hiv.png" style="display: none">
+      <img id="mobile_div3"  class="targetImg" src="images/sm-malaria.png" style="display: none">
+      <img id="mobile_div4" class="targetImg" src="images/sm-pneumonia.png" style="display: none">
+      <img id="mobile_div5"  class="targetImg"src="images/sm-diarreal.png" style="display: none">
+      <img id="mobile_div6" class="targetImg" src="images/sm-injuries.png" style="display: none">
+      <img id="mobile_div7" class="targetImg" src="images/sm-noncommunicable.png" style="display: none">
+      <img id="mobile_div8" class="targetImg" src="images/sm-measles.png" style="display: none">
+      <img id="mobile_div9" class="targetImg" src="images/sm-meningitis.png" style="display: none">
+      <img id="mobile_div10" class="targetImg" src="images/sm-other.png" style="display: none">
+    </div>
+  </div>
+</body>
+</html> 

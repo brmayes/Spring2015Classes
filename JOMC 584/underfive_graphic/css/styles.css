@@ -1,0 +1,42 @@
+body{
+   max-width: 1000px;
+   min-width: 300px;
+   margin: 0 auto;
+}
+
+.container{
+   max-width: 1000px;
+   min-width: 300px;
+   margin: 0 auto;
+}
+
+h1, h2{
+    font-family: 'Montserrat', sans-serif;
+}
+
+p{
+    font-family: font-family: 'Droid Serif', serif;
+}
+
+.lg-images {
+   max-width: 800px;
+}
+
+.lg-images img {
+   width: 100%;
+}
+
+.sm-images {
+   max-width: 300px;
+}
+
+.sm-images img {
+   width: 100%;
+}
+
+#mobile_div1, #mobile_div2, #mobile_div3, #mobile_div4,
+#mobile_div5, #mobile_div6, #mobile_div7, #mobile_div8,
+#mobile_div9, #mobile_div10
+{
+   max-width: 300px;
+}
