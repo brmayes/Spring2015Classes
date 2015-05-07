@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>CodePen - Overlay</title>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script src="http://cytoscape.github.io/cytoscape.js/api/cytoscape.js-latest/cytoscape.min.js"></script>
+  <script src="code.js"></script>
+
+    <style>
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+/* fontawesome */
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+* { box-sizing: border-box }
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(100, 100, 100, 0.8);
+  width: 100%;
+  height: 100%;
+}
+.box {
+  background: #fff;
+  width: 500px;
+  height: 200px;
+  margin: 50px auto;
+  padding: 5px 15px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px 0 #303030;
+}
+.close {
+  float: right;
+  font-size: 2em;
+  cursor: pointer;
+}
+a.showoverlay {
+  color: Blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+</style>
+
+    <script src="js/prefixfree.min.js"></script>
+
+</head>
+
+<body>
+
+  <h1>This is some Content</h1>
+  <iframe href="code.html" width="100%" height="100%"></iframe>
+  <a class="showoverlay">Show that Overlay again</a>
+<div class="overlay">
+  <div class="box">
+    <span class="close fontawesome-remove-sign"></span>
+    <h2>Overlay</h2>
+    <p>This is some Content inside the Overlay</p>
+    <p>Hide the Overlay by clickin' the button in the top-right corner</p>
+  </div>
+</div>
+
+  <script src='http://codepen.io/assets/libs/fullpage/jquery.js'></script>
+  <script src="js/index.js"></script>
+
+</body>
+
+</html>

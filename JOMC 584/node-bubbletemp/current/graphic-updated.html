@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <!--CURRENT-->
+        <link href="styles.css" rel="stylesheet" />
+        <meta charset=utf-8 />
+        <title>Imedi</title>
+        <link href='http://fonts.googleapis.com/css?family=Droid+Serif|Montserrat:400,700' rel='stylesheet' type='text/css'>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="http://cytoscape.github.io/cytoscape.js/api/cytoscape.js-latest/cytoscape.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/qtip2/2.2.0/jquery.qtip.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/qtip2/2.2.0/jquery.qtip.min.js"></script>
+        <link href="http://cdnjs.cloudflare.com/ajax/libs/qtip2/2.2.0/jquery.qtip.min.css" rel="stylesheet" type="text/css" />
+        <script src="https://cdn.rawgit.com/cytoscape/cytoscape.js-qtip/70964f0306e770837dbe2b81197c12fdc7804e38/cytoscape-qtip.js"></script>
+        <script src="code-updated.js"></script>
+        <link href="styles.css" rel="stylesheet" type="text/css" />
+
+        <style>
+          #cy {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+          }
+
+          #overlay {
+              display: none;
+              cursor: pointer;
+              -webkit-box-sizing: border-box;
+              -moz-box-sizing: border-box;
+              box-sizing: border-box;
+              position: absolute;
+              left: 0;
+              top: 0;
+              right: 0;
+              bottom: 0;
+              width: auto;
+              height: auto;
+              background-color: rgba(0, 0, 0, 0.5);
+          }
+
+          #overlay-content {
+              -webkit-box-sizing: border-box;
+              -moz-box-sizing: border-box;
+              box-sizing: border-box;
+              -webkit-border-radius: 5px;
+              -moz-border-radius: 5px;
+              border-radius: 5px;
+              width: 800px;
+              height: 600px;
+              padding: 20px;
+              background: #000;
+              position: absolute;
+              left: 50%;
+              top: 50%;
+              margin-left: -400px;
+              margin-top: -300px;
+              color: #fff;
+          }
+        </style>
+
+        <script>
+        $('#overlay').css({'opacity': 0, 'display': "block"}).animate({'opacity': 1}, 1000).on("click", function() {
+            $('#overlay').animate({'opacity': 0}, 1000);
+        });
+        </script>
+
+    </head>
+
+    <body>
+      <div id="overlay">
+          <div id="overlay-content">
+              <h1>Hello, World!</h1>
+          </div>
+      </div>
+        <!-- <div id="cy"></div> -->
+    </body>
+
+    </html>

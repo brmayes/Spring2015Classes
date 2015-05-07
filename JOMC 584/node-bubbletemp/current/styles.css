@@ -1,0 +1,60 @@
+body {
+  font-size: 14px;
+  background-color: #fafeff;
+  color: #111519;
+}
+
+/*#cy {
+  height: 50%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}*/
+
+iframe {
+  width: 1200px;
+  height: 800px;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Monserrat', sans-serif;
+  color: #5092a2;
+  font-weight: 700;
+}
+
+.text {
+  max-width: 550px;
+  margin: 0 auto;
+  display: block;
+}
+
+p {
+  font-family: 'Droid Serif', serif;
+}
+
+.byline {
+  font-family: 'Droid Serif', serif;
+}
+
+.role {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: 'Monserrat', sans-serif;
+}
+
+.name {
+  text-transform: capitalize;
+  color: #386f7f;
+}
+
+#overlay {
+    background: #000;
+    height: 100px;
+    color: #fff;
+    padding: 20px;
+}
